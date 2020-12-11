@@ -1,0 +1,20 @@
+{
+  "name": "absences",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc && cp -r ./src/public ./dist/public && cp -r ./src/views ./dist/views",
+    "start": "npm run compile && node ./dist/server.js"
+  },
+  "author": "The Trinity of Chaos",
+  "license": "N/A",
+  "dependencies": {
+    "@types/ejs": "^3.0.5",
+    "@types/express": "^4.17.9",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "typescript": "^4.1.2"
+  }
+}
